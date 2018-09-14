@@ -128,7 +128,7 @@ body
     text-decoration: none;
     font-family: sans-serif;
     position: relative;
-    
+    display: inline-block;
     list-style-type: none;
     columns: 6;
     max-width: 1000px;
@@ -182,5 +182,18 @@ h2
 
 li
 {
+    margin-bottom: 20px;
     list-style-type: none;
+    
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+ul
+{
+margin: 0px;
 }
