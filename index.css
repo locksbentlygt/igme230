@@ -3,24 +3,7 @@
 box-sizing: border-box;
 }
 
-/* #center
-{
-position: absolute;
-text-align: center;
-top: 40%;
-bottom: 50%;
-width: 100%;
-color:black;
-}
 
-#name 
-{
-font-family: 'Playfair Display SC', serif;
-font-size: 30px;
-display: block;
-width:306px;
-height:305;
-} */
 
 /* got the code for this idea from this website https://css-tricks.com/set-text-on-a-circle/*/
  .name
@@ -81,7 +64,7 @@ h1 span
 
 
 
-
+/*makes the border round and puts it around the image*/
 img
 {
     border-radius:50%;
@@ -89,12 +72,14 @@ img
     
 }
 
+/*assigns the seashell color to the background*/
 body
 {
     background-color: seashell;   
     
 }
 
+/*creates the big red dot in the center and gives it a black border like the photo*/
 .dot
 {
     
@@ -114,17 +99,16 @@ body
    
 }
 
+/*aligns all of the content put in the container*/
 #container
 {
     align-content: center;
     text-align: center;
 }
 
+/*places all of the links and placeholders into columns and assigns a sans-serif font*/
 #Exerscises
 {
-    
-
-   
     text-decoration: none;
     font-family: sans-serif;
     position: relative;
@@ -138,7 +122,7 @@ body
 
 
 
-
+/* assigns a font and an underline to the exersises header*/
 h2
 {
     font-family: 'Playfair Display SC', serif;
@@ -148,6 +132,7 @@ h2
     margin: 0;
 }
 
+/*assigns a font to the list and helps position it */
 #Projects
 {
     font-family: sans-serif;
@@ -160,6 +145,7 @@ h2
     padding:10px;
 }
 
+/* assigns a font and an underline to the projects header*/
 h3
 {
     font-family: 'Playfair Display SC', serif;
@@ -167,6 +153,7 @@ h3
     text-decoration: underline;        
 }
 
+/*places the photo in the middle*/
 #photo{
     width:100%;
     margin:auto;
@@ -174,30 +161,34 @@ h3
     bottom: 250px;
 }
 
+/*places a padding on the bottom of the exersises header*/
 h2
 {
     
     padding-bottom: 5%;
 }
 
+/*takes away the dots on the list*/
 li
 {
     margin-bottom: 20px;
     list-style-type: none;
     
 }
-
+/*takes away the underline form all of the links*/
 a
 {
     text-decoration: none;
     
 }
 
+/*takes away the margins from the unorderd lists*/
 ul
 {
 margin: 0px;
 }
 
+/*places an underlne whenever the mouse is above a link*/
 a:hover 
 {
      border-bottom: 1px solid;
