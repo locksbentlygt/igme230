@@ -22,7 +22,7 @@ width:306px;
 height:305;
 } */
 
-/*https://css-tricks.com/set-text-on-a-circle/*/
+/* got the code for this idea from this website https://css-tricks.com/set-text-on-a-circle/*/
  .name
 {
     position: relative;
@@ -32,6 +32,8 @@ height:305;
     height: 315px;
     
 }
+
+/*assigns the font to my name and changes the transform origin to the bottom center of each of the letters so that when they rotate it looks like a circle*/
 h1 span
 {
     font-family: 'Playfair Display SC', serif;
@@ -42,7 +44,7 @@ h1 span
     top: 0;
     transform-origin: bottom center;
 }
-
+/* each of these rotates the individual letters by a specific ammount*/ 
 .l1{transform: rotate(15deg);}
 .l2{transform: rotate(30deg);}
 .l3{transform: rotate(45deg);}
@@ -121,29 +123,41 @@ body
 #Exerscises
 {
     
-    float: right;
-    margin-right: 5%;
+
+   
     text-decoration: none;
-    vertical-align: text-top;
+    font-family: sans-serif;
     position: relative;
-    bottom: 500px;
+    
+    list-style-type: none;
+    columns: 6;
+    max-width: 1000px;
+    margin:  auto;
+    
 }
+
+
+
 
 h2
 {
     font-family: 'Playfair Display SC', serif;
     font-size: 250%;
     text-decoration: underline;
+    padding: 0%;
+    margin: 0;
 }
 
 #Projects
 {
-    float: left;
+    font-family: sans-serif;
+    float: center;
     margin-left: 0%;
     text-decoration: none;
     vertical-align: text-top;
     position: relative;
-    bottom: 500px;
+    bottom: 40px;
+    padding:10px;
 }
 
 h3
@@ -158,4 +172,15 @@ h3
     margin:auto;
     position: relative;
     bottom: 250px;
+}
+
+h2
+{
+    float:center;
+    padding-bottom: 5%;
+}
+
+li
+{
+    list-style-type: none;
 }
