@@ -1,0 +1,120 @@
+*
+{
+box-sizing: border-box;
+}
+
+/* #center
+{
+position: absolute;
+text-align: center;
+top: 40%;
+bottom: 50%;
+width: 100%;
+color:black;
+}
+
+#name 
+{
+font-family: 'Playfair Display SC', serif;
+font-size: 30px;
+display: block;
+width:306px;
+height:305;
+} */
+
+/*https://css-tricks.com/set-text-on-a-circle/*/
+ .name
+{
+    position: relative;
+    width: 365px;
+    border-radius: 50%;
+    transform: rotate(-112deg);
+    height: 470px;
+    
+}
+h1 span
+{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 80px;
+    position: absolute;
+    height: 350px;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+}
+
+.l1{transform: rotate(15deg);}
+.l2{transform: rotate(30deg);}
+.l3{transform: rotate(45deg);}
+.l4{
+    height:345px;
+    transform: rotate(60deg);}
+.l5{transform: rotate(75deg);}
+.l6{transform: rotate(90deg);}
+.l7{transform: rotate(105deg);}
+.l8{
+    
+    transform: rotate(120deg);}
+.l9{
+    
+    transform: rotate(135deg);}
+.l10{
+    
+    transform: rotate(150deg);}
+.l11{
+    
+    transform: rotate(165deg);}
+.l12{
+    
+    transform: rotate(180deg);}
+.l13{
+    
+    transform: rotate(195deg);}
+.l14{
+    
+    transform: rotate(210deg);} 
+
+
+img
+{
+
+position: fixed;
+bottom:38%;
+right:42%;
+border-radius:50%;
+border: 5px black solid;
+vertical-align: center;
+}
+
+body
+{
+background-color: seashell;   
+    
+}
+
+.dot
+{
+    
+    
+    height: 700px;
+    width: 700px;
+    background-color: red;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom:auto;
+    border: 5px solid;
+   
+   
+}
+
+#container
+{
+align-content: center;
+text-align: center;
+}
+
+
