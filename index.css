@@ -26,18 +26,18 @@ height:305;
  .name
 {
     position: relative;
-    width: 365px;
+    width: 245px;
     border-radius: 50%;
     transform: rotate(-112deg);
-    height: 470px;
+    height: 315px;
     
 }
 h1 span
 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 80px;
+    font-size: 50px;
     position: absolute;
-    height: 350px;
+    height: 250px;
     left: 0;
     top: 0;
     transform-origin: bottom center;
@@ -47,7 +47,7 @@ h1 span
 .l2{transform: rotate(30deg);}
 .l3{transform: rotate(45deg);}
 .l4{
-    height:345px;
+    
     transform: rotate(60deg);}
 .l5{transform: rotate(75deg);}
 .l6{transform: rotate(90deg);}
@@ -75,20 +75,21 @@ h1 span
     transform: rotate(210deg);} 
 
 
+
+
+
+
+
 img
 {
-
-position: fixed;
-bottom:38%;
-right:42%;
-border-radius:50%;
-border: 5px black solid;
-vertical-align: center;
+    border-radius:50%;
+    border: 5px black solid;
+    
 }
 
 body
 {
-background-color: seashell;   
+    background-color: seashell;   
     
 }
 
@@ -96,8 +97,8 @@ background-color: seashell;
 {
     
     
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
     background-color: red;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%; 
@@ -113,8 +114,48 @@ background-color: seashell;
 
 #container
 {
-align-content: center;
-text-align: center;
+    align-content: center;
+    text-align: center;
 }
 
+#Exerscises
+{
+    
+    float: right;
+    margin-right: 5%;
+    text-decoration: none;
+    vertical-align: text-top;
+    position: relative;
+    bottom: 500px;
+}
 
+h2
+{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 250%;
+    text-decoration: underline;
+}
+
+#Projects
+{
+    float: left;
+    margin-left: 0%;
+    text-decoration: none;
+    vertical-align: text-top;
+    position: relative;
+    bottom: 500px;
+}
+
+h3
+{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 250%;  
+    text-decoration: underline;        
+}
+
+#photo{
+    width:100%;
+    margin:auto;
+    position: relative;
+    bottom: 250px;
+}
