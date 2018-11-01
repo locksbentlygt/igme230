@@ -76,6 +76,7 @@ main img:hover
 
 /*this is all for the form on the contact me page*/
 form{
+    float: right;
     margin: 0 auto;
     width: 600px;
     padding: 1em;
@@ -95,7 +96,7 @@ label{
 
 input, textarea{
     font: 2em sans-serif;
-    width: 600px;
+    width: 900px;
     box-sizing: border-box;
     border: 5px solid black;
     height:2.5em;
@@ -107,7 +108,7 @@ input:focus, textarea:focus{
 
 textarea{
     vertical-align: top;
-    height: 7em;
+    height: 8em;
     font: 1em sans-serif;
 }
 
