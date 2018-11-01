@@ -54,6 +54,12 @@ main img:hover
     to{transform: translateX(250px);}
 }
 
+@keyframes spin 
+{
+        0%{transform: rotateY(0deg);}
+        100%{transform: rotateY(360deg);}
+}
+
 #current
 {
     color: white;
@@ -92,6 +98,7 @@ h1 span
     transform-origin: bottom center;
 }
 /* each of these rotates the individual letters by a specific ammount*/ 
+.l1{ animation: spin .5s linear both;}
 .l1{transform: rotate(15deg);}
 .l2{transform: rotate(30deg);}
 .l3{transform: rotate(45deg);}
@@ -122,6 +129,8 @@ h1 span
 .l14{
     
     transform: rotate(210deg);} 
+
+
 
 
 
