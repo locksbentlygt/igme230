@@ -1,0 +1,129 @@
+main
+{
+  
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+   
+}
+
+main img
+{
+    margin: 0 50px;  
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main img:hover 
+{
+    transform: scale(1.05);
+}
+
+#aside
+{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    
+    align-content: flex-start;
+    border-bottom: 2px solid black;
+}
+
+#aside p:hover
+{
+    text-decoration: underline; 
+   ; 
+}
+
+#aside p
+{
+    margin: 30px 20px
+}
+
+
+
+#aside p:after
+{
+
+}
+
+@keyframes drop {
+    from{transform: translateX(0px);}
+    to{transform: translateX(250px);}
+}
+
+#current
+{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#aboutParagraph
+{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+}
+
+
+/* got the code for this idea from this website https://css-tricks.com/set-text-on-a-circle/*/
+.name
+{
+    position: relative;
+    width: 245px;
+    border-radius: 50%;
+    transform: rotate(-112deg);
+    height: 315px;
+    
+}
+
+/*assigns the font to my name and changes the transform origin to the bottom center of each of the letters so that when they rotate it looks like a circle*/
+h1 span
+{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    position: absolute;
+    height: 250px;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+}
+/* each of these rotates the individual letters by a specific ammount*/ 
+.l1{transform: rotate(15deg);}
+.l2{transform: rotate(30deg);}
+.l3{transform: rotate(45deg);}
+.l4{
+    
+    transform: rotate(60deg);}
+.l5{transform: rotate(75deg);}
+.l6{transform: rotate(90deg);}
+.l7{transform: rotate(105deg);}
+.l8{
+    
+    transform: rotate(120deg);}
+.l9{
+    
+    transform: rotate(135deg);}
+.l10{
+    
+    transform: rotate(150deg);}
+.l11{
+    
+    transform: rotate(165deg);}
+.l12{
+    
+    transform: rotate(180deg);}
+.l13{
+    
+    transform: rotate(195deg);}
+.l14{
+    
+    transform: rotate(210deg);} 
+
+
+
+
+
