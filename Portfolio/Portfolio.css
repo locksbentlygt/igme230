@@ -54,11 +54,7 @@ main img:hover
     to{transform: translateX(250px);}
 }
 
-@keyframes spin 
-{
-        0%{transform: rotateY(0deg);}
-        100%{transform: rotateY(360deg);}
-}
+
 
 #current
 {
@@ -77,21 +73,25 @@ main img:hover
 /*this is all for the form on the contact me page*/
 form{
     float: right;
-    margin: 0 auto;
-    width: 600px;
+    margin: 4em auto;
+    width: 900px;
     padding: 1em;
+    margin-right:5em
     /*border: 1px solid black;*/
     
 }
 
 form div + div{
     margin-top: 3em;
+    
 }
 
 label{
     display: inline-block;
     width: 90px;
     text-align: right;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
 }
 
 input, textarea{
@@ -114,19 +114,52 @@ textarea{
 
 .button{
     padding-left: 90px;
+    
 }
 
 button{
     margin-left: .5em;
+    width: 250px;
+    height:100px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
 }
 
+button:hover
+{
+    background-color: grey;
+}
 
+/* this is for the other contact info on the contact me page  */
+
+#contact
+{
+
+    width:40%;
+    font-family: 'Nunito', sans-serif;
+    font-size:50px;
+
+}
+
+#contact p 
+{
+    padding-top:1em;
+    padding-left:1.5em;
+}
 
 
 
 /*this code is for the rotaton of my name on the home page*/
 
 /* got the code for this idea from this website https://css-tricks.com/set-text-on-a-circle/*/
+@keyframes spin 
+{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
 .name
 {
     position: relative;
@@ -135,6 +168,11 @@ button{
     transform: rotate(-112deg);
     height: 315px;
     
+}
+
+h1
+{
+      
 }
 
 /*assigns the font to my name and changes the transform origin to the bottom center of each of the letters so that when they rotate it looks like a circle*/
@@ -147,43 +185,102 @@ h1 span
     left: 0;
     top: 0;
     transform-origin: bottom center;
+    
 }
 /* each of these rotates the individual letters by a specific ammount*/ 
-.l1{ animation: spin .5s linear both;}
-.l1{transform: rotate(15deg);}
-.l2{transform: rotate(30deg);}
-.l3{transform: rotate(45deg);}
-.l4{
-    
+
+.l1{animation: spin .5s linear both;
+   }
+
+.l2{animation: spin .5s linear both;
+    transform: rotate(30deg);}
+
+.l3{animation: spin .5s linear both;
+    transform: rotate(45deg);}
+
+.l4{animation: spin .5s linear both;
     transform: rotate(60deg);}
-.l5{transform: rotate(75deg);}
-.l6{transform: rotate(90deg);}
-.l7{transform: rotate(105deg);}
-.l8{
-    
+
+.l5{animation: spin .5s linear both;
+    transform: rotate(75deg);}
+
+.l6{animation: spin .5s linear both;
+    transform: rotate(90deg);}
+
+.l7{animation: spin .5s linear both;
+    transform: rotate(105deg);}
+
+.l8{animation: spin .5s linear both;
     transform: rotate(120deg);}
-.l9{
-    
+.l9{animation: spin .5s linear both;
     transform: rotate(135deg);}
-.l10{
-    
+.l10{animation: spin .5s linear both;
     transform: rotate(150deg);}
-.l11{
-    
-    transform: rotate(165deg);}
-.l12{
-    
-    transform: rotate(180deg);}
-.l13{
-    
-    transform: rotate(195deg);}
-.l14{
-    
+
+.l11{transform: rotate(165deg);
+    animation: spin .5s linear both;}
+
+.l12{transform: rotate(180deg);
+    animation: spin .5s linear both;}
+
+.l13{transform: rotate(195deg);
+    animation: spin .5s linear both;}
+
+.l14{animation: spin .5s linear both;
     transform: rotate(210deg);} 
 
+img
+{
+     border-radius:50%;
+     border: 5px black solid;
+         
+}
+    
+    /*assigns the seashell color to the background*/
+ body
+{
+        /* background-color: seashell;    */
+        
+}
+    
+    /*creates the big rainbow dot in the center and gives it a black border like the photo*/
+.dot
+{
+        
+        
+    height: 500px;
+    width: 500px;
+    background-color: #FF0000;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); */
+    animation: rainbow 10s infinite;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom:auto;
+    border: 5px solid;
+       
+       
+}
+    
+    /*aligns all of the content put in the container*/
+#container
+{
+    align-content: center;
+    text-align: center;
+}
 
 
-
-
-
-
+    /* creates the animation that transitions between whatever set colors are assinged to the background colors */
+@keyframes rainbow
+{
+    /* set your colors and when they should occur here */
+    0%, 100% { background-color: #FF0000; }
+    16.66% { background-color: #FFFF00; }
+    33.33% { background-color: #00FF00; }
+    50% { background-color: #00FFFF; }
+    66.66% { background-color: #0000FF; }
+    83.33% { background-color: #FF00FF; }
+}
