@@ -34,7 +34,7 @@ main img:hover
 #aside p:hover
 {
     text-decoration: underline; 
-   ; 
+    
 }
 
 #aside p
@@ -44,9 +44,10 @@ main img:hover
 
 
 
-#aside p:after
+#aside p:visited
 {
-
+    text-decoration: none;
+    color:blakc;
 }
 
 @keyframes drop {
@@ -233,7 +234,9 @@ img
 {
      border-radius:50%;
      border: 5px black solid;
-         
+     margin-top:-48%;
+     margin-left:auto;
+     margin-right:auto;
 }
     
     /*assigns the seashell color to the background*/
@@ -245,9 +248,7 @@ img
     
     /*creates the big rainbow dot in the center and gives it a black border like the photo*/
 .dot
-{
-        
-        
+{   
     height: 500px;
     width: 500px;
     background-color: #FF0000;
@@ -259,8 +260,8 @@ img
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    margin-bottom:auto;
-    border: 5px solid;
+    /* margin-bottom:auto; */
+    border: 2px solid;
        
        
 }
@@ -268,7 +269,8 @@ img
     /*aligns all of the content put in the container*/
 #container
 {
-    align-content: center;
+    
+    /* align-content:center; */
     text-align: center;
 }
 
@@ -283,4 +285,55 @@ img
     50% { background-color: #00FFFF; }
     66.66% { background-color: #0000FF; }
     83.33% { background-color: #FF00FF; }
+}
+
+/*this is for links on the homepage*/
+
+#Habout{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    text-decoration: none;
+    color:black;
+    
+    margin-right:3em;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+#Habout:visited { text-decoration: none; }
+#Habout:hover { text-decoration: none; }
+#Habout:focus { text-decoration: none; }
+#Habout:hover, #Habout:active { text-decoration: none; }
+
+#Hcontact{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    text-decoration: none;
+    color:black;
+    margin-left:3em;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+#Hcontact:visited { text-decoration: none; }
+#Hcontact:hover { text-decoration: none; }
+#Hcontact:focus { text-decoration: none; }
+#Hcontact:hover, #Hcontact:active { text-decoration: none; }
+
+#Htimeline{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    text-decoration: none;
+    color:black;
+}
+#Htimeline:visited { text-decoration: none; }
+#Htimeline:hover { text-decoration: none; }
+#Htimeline:focus { text-decoration: none; }
+#Htimeline:hover, a:active { text-decoration: none; }
+
+#Hlinks{
+    margin-top:-3em;
+   
+    
 }
