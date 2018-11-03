@@ -5,7 +5,12 @@ main
    justify-content: center;
    align-items: center;
    height: 90vh;
-   
+   float:left
+}
+
+main #pose
+{
+    border-radius: 50%;
 }
 
 main img
@@ -26,9 +31,10 @@ main img:hover
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: row;
-    
+    position: fixed;
     align-content: flex-start;
     border-bottom: 2px solid black;
+    width: 99%;
 }
 
 #aside p:hover

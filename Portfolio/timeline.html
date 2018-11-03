@@ -17,15 +17,27 @@
             <div><p ><a href="About.html">About</a></p></div>
             </div>
     <main>
-        <div class="photoContainer"><img src="batman.png" alt="Batman"></div>
-        <div class="photoContainer"><img src="DOGE.png" alt="Doge"></div>
-        <div class="photoContainer"><img src="birdie.png" alt="Bird"></div>
-        <div class="photoContainer"><img src="NewPose.png" alt="NewPose"></div>
-        <div class="photoContainer"><img src="Atlas.PNG" alt="Atlas"></div>
-        <div class="photoContainer"><img src="Gender.PNG" alt="Gender"></div>
-        <div class="photoContainer"><img src="Debt.PNG" alt="Debt"></div>
+        <img src="batman.png" alt="Batman">
+        <img src="DOGE.png" alt="Doge">
+        <img src="birdie.png" alt="Bird">
+        <img id="pose" src="NewPose.png" alt="NewPose">
+        <img src="Atlas.PNG" alt="Atlas">
+        <img src="Gender.PNG" alt="Gender">
+        <img src="Debt.PNG" alt="Debt">
     </main>
 
+    <script>
+        var pos = 0;
+        let x = document.querySelectorAll('img');
+        for (let image of x){
+            image.onclick = moveDown(); 
+        }
+
+        function moveDown(){
+            x.style.top = pos + '200px'; 
+        }
+
+    </script>
    
 </body>
 </html>
