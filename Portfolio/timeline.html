@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="Portfolio.css">
     <script src="timeline.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
 </head>
 <body>
 
@@ -17,24 +19,36 @@
             <div><p ><a href="About.html">About</a></p></div>
             </div>
     <main>
-        <img src="batman.png" alt="Batman">
-        <img src="DOGE.png" alt="Doge">
-        <img src="birdie.png" alt="Bird">
-        <img id="pose" src="NewPose.png" alt="NewPose">
+        <a href="batman-description.html"><img  src="batman.png" alt="Batman"></a>
+        
+        <a href="DOGE-description.html"><img src="DOGE.png" alt="Doge"></a>
+        
+        <a href="birdie-description.html"><img src="birdie.png" alt="Bird"></a>
+       
+        
+        <a href="https://people.rit.edu/jtb3607/igme110/2017project/page%202.html"><img id="pose" src="NewPose.png" alt="NewPose"></a>
         <img src="Atlas.PNG" alt="Atlas">
         <img src="Gender.PNG" alt="Gender">
         <img src="Debt.PNG" alt="Debt">
     </main>
 
+    <div id = text>
+        
+        
+        
+    </div>
+
     <script>
         var pos = 0;
-        let x = document.querySelectorAll('img');
+        var x = document.querySelectorAll('img');
         for (let image of x){
             image.onclick = moveDown(); 
+            
         }
 
         function moveDown(){
-            x.style.top = pos + '200px'; 
+            
+            $("img").animate({top: "200px"}); 
         }
 
     </script>
