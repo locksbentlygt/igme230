@@ -388,3 +388,34 @@ img #photo
     width:50%;
     font-size: 30px;
 }
+
+/*this is the code for the drop down meus on the timeline page*/
+.dropdown-content
+{
+    display: none; 
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.658);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    padding: 12px 16px;
+    z-index: 1;
+    width:300px;
+    height:75px;
+    margin-left: 3em;
+    list-style-type: none;
+    border-color: black;
+    border-radius: 10%;
+    
+}
+
+#dropdown:hover .dropdown-content
+{
+  display: block; 
+  text-decoration: none;
+}
+
+#dropdown li
+{
+    margin-top: .5em;
+    font-family: 'Nunito', sans-serif;
+}
