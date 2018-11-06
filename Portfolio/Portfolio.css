@@ -361,19 +361,20 @@ h1 span
     margin-left: 5%;   
      border: 1px solid black;
     border-radius: 10px; 
-    max-width: 600px;
+    max-width: 500px;
     
 }
 
-#description{
-    float: right;
-    margin-top:10%;
+#description
+{
+    
+    
     font-family: 'Nunito', sans-serif;
-    width:50%;
+    width:60%;
     font-size: 30px;
-    position: relative;
-    bottom:600px;
+  
 }
+
 
 /*this is the code for the drop down meus on the timeline page*/
 .dropdown-content
@@ -554,4 +555,6 @@ width: 40%;
        max-width: 275px;
        margin-top: 100px;
    } 
+
+   
 }
