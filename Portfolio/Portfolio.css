@@ -365,7 +365,7 @@ h1 span
 }
 
 
-/*this is the code for the drop down meus on the timeline page*/
+/*this is the code for the drop down meus on the portfolio page*/
 /* creates a dropdown menu whenever an image on the portfolio page is hoverd over by the mouse*/
 .dropdown-content
 {
@@ -389,13 +389,13 @@ li h1{
     font-size: 20px;
 }
 
-#dropdown:hover .dropdown-content
+.dropdown:hover .dropdown-content
 {
   display: block; 
   text-decoration: none;
 }
 
-#dropdown li
+.dropdown li
 {
     margin-top: 0.5em;
     font-family: 'Nunito', sans-serif;
