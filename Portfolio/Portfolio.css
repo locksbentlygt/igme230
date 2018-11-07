@@ -211,10 +211,7 @@ button:hover
     
 }
 
-h1
-{
-      
-}
+
 
 /*assigns the font to my name and changes the transform origin to the bottom center of each of the letters so that when they rotate it looks like a circle*/
 h1 span
@@ -315,12 +312,7 @@ h1 span
 }
     
     /*aligns all of the content put in the container*/
-#container
-{
-    
-    /* align-content:center; */
-   
-}
+
 
 
     /* creates the animation that transitions between whatever set colors are assinged to the background colors */
@@ -559,6 +551,13 @@ footer{
     position: relative;
     bottom:160px;
    }
+
+   #description2
+{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
     
    #description
    {
@@ -573,7 +572,12 @@ footer{
    {
        max-width: 275px;
        margin-top: 100px;
+       
    } 
+
+   #imageD{
+       padding: 10px;
+   }
 
    
 }
