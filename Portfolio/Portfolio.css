@@ -1,7 +1,9 @@
-/*this is for the images and text on the timeline page*/
+
 a:link{text-decoration: none;}
 a:link:visited{text-decoration: none!important; color: black;}
 a:link:hover{text-decoration: underline;}
+/*this is for the images and text on the portfolio page*/
+
 main
 {
   
@@ -28,29 +30,15 @@ main img
     border: 1px solid black;
     border-radius: 10px;
 }
-
+/* when an image is hoverd over by the maouse scale the image to 1.05 times its normal size*/ 
 main img:hover 
 {
     transform: scale(1.05);
 }
 
-/* #text
-{
-    font-family: 'Nunito', sans-serif;
-   
-    position: absolute;
-    display: flex;
-    margin-left:3em;
-}
 
-#text p{
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    width: 20%;
-} */
 
-/* code for the navigation bar*/
+/* this constructs the navigation bar at the top and places a black box with rounded edges on the current page*/
 
 #aside
 {
@@ -66,6 +54,8 @@ main img:hover
     background-color: seashell;
     text-decoration: none;
 }
+
+
 
 #aside p:hover
 {
@@ -87,11 +77,6 @@ main img:hover
     color:black;
 }
 
-@keyframes drop {
-    from{transform: translateX(0px);}
-    to{transform: translateX(250px);}
-}
-
 
 
 #current
@@ -102,6 +87,7 @@ main img:hover
     border-radius: 10px;
 }
 
+/* some spacing for the about page*/
 #aboutParagraph
 {
     margin:0 auto;
@@ -118,9 +104,10 @@ form{
     width: 900px;
     padding: 1em;
     margin-right:5em;
-    /*border: 1px solid black;*/
+    
     
 }
+
 
 form div + div{
     margin-top: 3em;
@@ -142,7 +129,7 @@ input, textarea{
     border: 5px solid black;
     height:2.5em;
 }
-
+/*whatever text box is currently being used will have a grey box border*/
 input:focus, textarea:focus{
     border-color:grey;
 }
@@ -193,9 +180,9 @@ button:hover
 
 
 
-/*this code is for the rotaton of my name on the home page*/
 
-/* got the code for this idea from this website https://css-tricks.com/set-text-on-a-circle/*/
+
+/* got the code for this idea from this website https://css-tricks.com/set-text-on-a-circle/  it rotates an element 360 degrees*/
 @keyframes spin 
 {
     0%{transform: rotateY(0deg);}
@@ -349,7 +336,7 @@ h1 span
 
 
 
-
+/* this formats the images on the display page*/
 #display-image{
     margin-top: 25%;
     margin-left: 5%;   
@@ -364,11 +351,12 @@ h1 span
     
     
     font-family: 'Nunito', sans-serif;
-    width:60%;
+     width:1000px; 
     font-size: 30px;
+    margin-left:30px;
   
 }
-
+/*aligns the description text and the image in a row*/
 #description2
 {
     display: flex;
@@ -378,6 +366,7 @@ h1 span
 
 
 /*this is the code for the drop down meus on the timeline page*/
+/* creates a dropdown menu whenever an image on the portfolio page is hoverd over by the mouse*/
 .dropdown-content
 {
     display: none; 
@@ -414,7 +403,9 @@ li h1{
  
 #imageD
 {
-width: 40%;
+width: 900px;
+margin:10px;
+
 }
 
 footer{
@@ -423,6 +414,8 @@ footer{
     padding-left:25px;
 }
 
+
+/* when the screen size reaches 480 pixels switch to these specifications*/
 @media screen and (max-width: 480px)
 {
 
