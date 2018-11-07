@@ -100,10 +100,10 @@ main img:hover
 /*this is all for the form on the contact me page*/
 form{
     float: right;
-    margin: 9em auto;
-    width: 900px;
+    margin-top: 150px;
+   
     padding: 1em;
-    margin-right:5em;
+    margin-right: 50px;
     
     
 }
@@ -120,14 +120,16 @@ label{
     text-align: right;
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
+    padding-right: 40px;
 }
 
 input, textarea{
     font: 2em sans-serif;
-    width: 900px;
+    width:600px;
     box-sizing: border-box;
     border: 5px solid black;
     height:2.5em;
+    margin-top:10px;
 }
 /*whatever text box is currently being used will have a grey box border*/
 input:focus, textarea:focus{
@@ -165,11 +167,13 @@ button:hover
 
 #contact
 {
-
-    width:40%;
+    float: left;
+    width:500px;
     font-family: 'Nunito', sans-serif;
     font-size:50px;
     padding-top:1em;
+    height:765px;
+    margin-right:50px;
 }
 
 #contact p 
@@ -177,7 +181,6 @@ button:hover
     padding-top:1em;
     padding-left:1.5em;
 }
-
 
 
 
