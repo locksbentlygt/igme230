@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    #panel1 , #panel2{
+        background-color: pink;
+        height:200px;
+        width:200px;
+        margin: 30px;
+    }
+    </style>
+</head>
+<body>
+    <button id = "show" >show</button>  <button id = "hide">hide</button>
+
+    <div id = "panel1">I have text here</div>
+    <div id = "panel2">Theres more text here</div>
+
+    <script>
+
+        // this is from the jquery hide and show page on w3schools
+    $("#hide").click(function(){
+        $("#panel1").hide(1000);
+    });
+
+    $("#show").click(function(){
+        $("#panel1").show(1000);
+    });
+    </script>
+</body>
+</html>
