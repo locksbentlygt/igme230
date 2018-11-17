@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.slidereveal.min.js"></script>
+    <style>
+        #cagepanel {
+            display: grid;
+            grid-template-columns: 500px 3.5rem;
+            min-height: 200px;
+            overflow: scroll;
+            position: fixed;
+            left: -500px;
+            margin-bottom: 2em;
+        }
+
+        cagetoggle{
+          grid-column-start: 2;  
+          font-weight: bold;
+          
+        }
+
+        #cagemenu {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            align-items: top;
+           
+        }
+
+        
+        #close {
+            display: none;
+            font-size: 2.5rem;
+        }
+
+        #open {
+            font-size: 2.5rem;
+        }
+
+        .submenu-panel {
+            display: none; 
+        }
+
+        li{
+            list-style-type: none;
+        }
+        span{
+            margin:20px;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <div id="cagepanel">
+        <div id="cagetoggle"><span id="open">O</span><span id="close">C</span></div>
+        <div id="cagemenu">
+            <!-- <p>Cages</p> -->
+            <ul>
+                <li><span class="submenu"><img src="Mini-cage.png" alt="TheCage"></span>
+                    <ul class="submenu-panel">
+                        <li><img src="TheCage.png" alt="Mini-cage"></li>
+                    </ul>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+
+    <script>
+            $("#close").click(function () {
+                $("#cagepanel").animate({ left: '-500px' }, "slow");
+                $("#close").toggle();
+                $("#open").toggle();
+            });
+    
+            $("#open").click(function () {
+                $("#cagepanel").animate({ left: '0px' }, "slow");
+                $("#close").toggle();
+                $("#open").toggle();
+            });
+    
+            $(".submenu").click(function() {
+                $(this).next(".submenu-panel").toggle();
+            });
+    
+        </script>
+
+</body>
+</html>
