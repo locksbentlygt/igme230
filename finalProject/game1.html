@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="matter.js" type="text/javascript"></script>
+    <script src="finalProject.js"></script>
+    <script src="finalProject.css"></script>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var rect = [];
+    function Prow(x , y)
+{
+    var length = 5;
+ for (var i = 0; i < length; i++){
+     rect.push(Bodies.rectangle(200,y,20,20,options));
+ }
+}
+    var options = {
+        isStatic:true,
+        angle: 95
+    }
+    var Engine = Matter.Engine,
+    Render = Matter.Render,
+    World = Matter.World,
+    Bodies = Matter.Bodies;
+
+// create an engine
+var engine = Engine.create();
+
+// create a renderer
+var render = Render.create({
+    element: document.body,
+    engine: engine
+});
+
+// create two boxes and a ground
+var boxA = Bodies.circle(400, 0, 20, 20);
+// var boxB = Bodies.circle(450, 50, 20, 20);
+var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+//this draws the first row of 5 boxes need to figure out how to make this in a function or loop
+var plink1 = Bodies.rectangle(200,100,40,40, {isStatic:true, angle: 95});
+var plink2 = Bodies.rectangle(300,100,40,40, {isStatic:true, angle: 95});
+var plink3 = Bodies.rectangle(400,100,40,40, {isStatic:true, angle: 95});
+var plink4 = Bodies.rectangle(500,100,40,40, {isStatic:true, angle: 95});
+var plink5 = Bodies.rectangle(600,100,40,40, {isStatic:true, angle: 95});
+//this draws the second row of 5 boxes need to figure out how to make this in a function or loop
+var plink6 = Bodies.rectangle(200,300,40,40, {isStatic:true, angle: 95});
+var plink7 = Bodies.rectangle(300,300,40,40, {isStatic:true, angle: 95});
+var plink8 = Bodies.rectangle(400,300,40,40, {isStatic:true, angle: 95});
+var plink9 = Bodies.rectangle(500,300,40,40, {isStatic:true, angle: 95});
+var plink10 = Bodies.rectangle(600,300,40,40, {isStatic:true, angle: 95});
+// var circle = Bodies.circle(100, 100, 20, 20);
+// var ground2 = Bodies.rectangle(400, 500, 810, 60, { isStatic: true });
+// Prow(100,100);
+// add all of the bodies to the world
+World.add(engine.world, [boxA, ground,plink1,rect,plink2,plink3,plink4,plink5,plink6,plink7,plink8,plink9,plink10]);
+
+// run the engine
+Engine.run(engine);
+
+// run the renderer
+Render.run(render);
+
+
+</script>
+</html>
