@@ -47,7 +47,22 @@ wrapper{
     grid-template-columns: 1fr 2fr 200px;
 
 }
+header{
+    grid-area: head;
+}
+
+nav{
+    grid-area: nav;
+}
 
 article{
-    grid-column: 1;
+    grid-area: art;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: foot;
 }
