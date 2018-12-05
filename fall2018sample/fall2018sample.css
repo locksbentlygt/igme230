@@ -37,18 +37,29 @@ nav, aside {
 /**************
 Your Formatting
 ***************/
-
-wrapper{
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#wrapper{
     display: grid;
-    min-height: 100%;
+  
+    height: 100%;
     width: 90%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     grid-template-rows: 4rem 1fr 3rem; 
     grid-template-columns: 1fr 2fr 200px;
+    grid-template-areas: "head head head"
+                         "aside art nav"
+                         "foot foot foot";  
 
 }
 header{
     grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -57,6 +68,7 @@ nav{
 
 article{
     grid-area: art;
+    
 }
 
 aside{
@@ -64,5 +76,51 @@ aside{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: foot;
+}
+
+.menuitem{
+    background-color: white;
+    margin: 0;
+    border-top: 1px solid #b5e7a0
+ 
+}
+
+.submenu{
+    background-color: lightgrey;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.submenu li{
+    padding-left: .25rem;
+    background-color: lightgrey;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #wrapper{
+        display: grid;
+      
+       
+        width: 100%;
+        /* max-width: 1200px; */
+       
+        grid-template-columns: 1fr;
+        grid-template-areas: "head"
+                             "nav"
+                             "art"
+                             "aside"
+                             "foot";  
+    
+    }
+  
+    article{
+       
+    }
 }
