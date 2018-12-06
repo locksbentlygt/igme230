@@ -1,0 +1,151 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkgreen;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+html,body{
+    height: 100%;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+  
+}
+
+#yourgrid{
+    width: 90%;
+    max-width: 1000px;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 75px 30px 1fr 2fr 50px; 
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "head head "
+                         "nav nav "
+                         "aside art"
+                         "extra art"
+                         "foot foot";
+}
+
+
+header{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    background-color: lavenderblush;
+
+}
+
+article{
+    grid-area: art;
+    background-color: lightcyan; 
+    z-index: 0;
+
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightblue;
+    z-index: 0;
+}
+
+footer{
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+
+}
+
+#extracredit{
+    grid-area: extra;
+    background-color: lightblue;
+    width: 100%;
+    margin: 0;
+}
+
+.menu{
+    width: 6rem;
+    background-color: #ccc;
+    margin-bottom: 0;
+    margin-top:3px;
+    z-index: 0;
+}
+
+.items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #ddd;
+}
+#extracredit h2{
+    display: flex;
+    justify-content: center;
+}
+
+#extracredit #clickme{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #yourgrid{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 75px 30px auto auto auto 30px; 
+        grid-template-columns: 1fr;
+        grid-template-areas: "head"
+                             "nav"
+                             "art"
+                             "aside"
+                             "extra"
+                             "foot";
+    }
+    footer p{
+        margin-top: 3px;
+    }
+
+}
