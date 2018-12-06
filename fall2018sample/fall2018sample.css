@@ -37,6 +37,10 @@ nav, aside {
 /**************
 Your Formatting
 ***************/
+html{
+    height: 100%;
+}
+
 body{
     height: 100%;
     display: flex;
@@ -112,6 +116,7 @@ footer{
         /* max-width: 1200px; */
        
         grid-template-columns: 1fr;
+        grid-template-rows: 4rem 1fr 2fr 200px 3rem;
         grid-template-areas: "head"
                              "nav"
                              "art"
