@@ -40,7 +40,7 @@ function setup(){
 }
 
 function mouseClicked(){
-    circles.push(new Circ(mouseX,mouseY,30));
+    circles.push(new Circ(mouseX,mouseY,15));
     console.log(circles.length);
 }
 
@@ -66,7 +66,13 @@ function draw(){
 
 
 function checkCol(){
+    circles.forEach(function(cir){
+        if (cir.position.x > 200 && cir.position.x < 235 && cir.position.y ==  680){
+            console.log("wim");
+        }
+    });
 
+    
     
 }
 
