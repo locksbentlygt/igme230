@@ -47,7 +47,7 @@ function mouseClicked(){
 function draw(){
   
     background(51);
-    
+    checkCol();
     for(let k = 0; k < goals.length; k++){
         goals[k].show();
     }
@@ -67,7 +67,7 @@ function draw(){
 
 function checkCol(){
     circles.forEach(function(cir){
-        if (cir.position.x > 200 && cir.position.x < 235 && cir.position.y ==  680){
+        if (cir.body.position.x > 200 && cir.body.position.x < 235 && cir.body.position.y ==  680){
             console.log("wim");
         }
     });
