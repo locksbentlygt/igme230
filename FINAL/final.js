@@ -60,6 +60,21 @@ function draw(){
     for(i = 0; i < rows.length; i++){
         rows[i].show();
     }
+
+    // let r = rows.body.position.x;
+    // let tick = 1;
+
+     for(let r =0; r < 5; r++){
+        rows.forEach(function(row){
+           if(row.body.position.x > 10){ 
+            row.body.position.x += r/10;
+           }
+            // if(row.body.position = 390){
+            //     // row.body.position -= r;
+            // }
+        });
+    }
+   
     
 }
 
