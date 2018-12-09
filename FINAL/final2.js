@@ -7,6 +7,7 @@ var Engine = Matter.Engine,
     var ground;
     var leftS;
     var rightS;
+    var topS;
     var world;
     let circles = [];
     let rows = [];
@@ -14,6 +15,8 @@ var Engine = Matter.Engine,
     let box1;
     let box2;
     let box3;
+    let choices = [];
+
     //let newC;
   
 function setup(){
@@ -28,6 +31,7 @@ function setup(){
     ground = Bodies.rectangle(200, 725, 400, 50, { isStatic: true });
     leftS = Bodies.rectangle(-20, 350, 40, 700, { isStatic: true });
     rightS = Bodies.rectangle(420, 350, 40, 700, { isStatic: true });
+    topS = new staticB(200,-20,420,40);
     //goalL = Bodies.rectangle(200, 600, 100, 50/2, {isStatic:true});
     //newC = new staticC(100,100,20);
     goals.push(box1 = new staticB(200,700,75,50),box2 = new staticB(165,700,10,100),box3 = new staticB(235,700,10,100));
@@ -39,16 +43,27 @@ function setup(){
     
 }
 
+    
 function mouseClicked(){
-    circles.push(new Circ(mouseX,mouseY,15));
-    // console.log(circles.length);
-
+    
+    choices =[(new Circ(mouseX,mouseY,15)),(new Boxy(mouseX,mouseY,15,15))];
+    let R = random(0,1); 
+    circles.push([R]);
+    console.log(circles.length);
+    let r = random(-1,1);
+    engine.world.gravity.y = r;
+   
+    for(let i = 0; i < rows.length; i++){
+     rows[i].colour();
+    }
 }
+
 
 function draw(){
   
     background(51);
-    checkCol();
+    topS.show();
+    
     for(let k = 0; k < goals.length; k++){
         goals[k].show();
     }
@@ -87,27 +102,29 @@ function draw(){
 
 
 
-function checkCol(){
-    circles.forEach(function(cir){
-        if (cir.body.position.x > 200 && cir.body.position.x < 235 && cir.body.position.y ==  680){
-            console.log("wim");
-        }
-    });
+// function checkCol(){
+//     circles.forEach(function(cir){
+//         if (cir.body.position.x > 200 && cir.body.position.x < 235 && cir.body.position.y ==  680){
+//             console.log("wim");
+//         }
+//     });
 
     
     
-}
+// }
 
 function makeRows(){
     for(let i =0; i < 5; i++){
         for(let p = 0; p < 4; p++){
-        rows.push(new staticC(i*70+55,p* 150+100,40));
+        rows.push(new staticCR(i*70+55,p* 150+100,40));
+    
         }
     }
 
     for(let i =0; i < 4; i++){
         for(let p = 0; p < 3; p++){
-        rows.push(new staticC(i*70+85,p* 150+175,40));
+        rows.push(new staticCR(i*70+85,p* 150+175,40));
+       
         }
     }
 }
