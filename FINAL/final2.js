@@ -46,12 +46,19 @@ function setup(){
     
 function mouseClicked(){
     
-    choices =[(new Circ(mouseX,mouseY,15)),(new Boxy(mouseX,mouseY,15,15))];
+    //  choices =[(new Circ(mouseX,mouseY,15)),(new Boxy(mouseX,mouseY,15,15))];
     let R = random(0,1); 
-    circles.push([R]);
+    // circles.push([R]);
+    if(R > 0.5 ){
+    circles.push(new Circ(mouseX,mouseY,15));
+    }else if (R < 0.5){
+    circles.push(new Boxy(mouseX,mouseY,15,15));
+    }
     console.log(circles.length);
-    let r = random(-1,1);
-    engine.world.gravity.y = r;
+    let gY = random(-1,1);
+    let gX = random(-1,1);
+    engine.world.gravity.y = gY;
+    engine.world.gravity.x = gX;
    
     for(let i = 0; i < rows.length; i++){
      rows[i].colour();
@@ -61,7 +68,7 @@ function mouseClicked(){
 
 function draw(){
   
-    background(51);
+    background(255);
     topS.show();
     
     for(let k = 0; k < goals.length; k++){

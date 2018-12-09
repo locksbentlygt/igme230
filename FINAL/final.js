@@ -98,6 +98,8 @@ function checkCol(){
     
 }
 
+
+//spawn multiple rows of static circles 
 function makeRows(){
     for(let i =0; i < 5; i++){
         for(let p = 0; p < 4; p++){
