@@ -123,7 +123,7 @@ function draw(){
 function makeRows(){
     for(let i =0; i < 5; i++){
         for(let p = 0; p < 4; p++){
-        rows.push(new staticCR(i*70+55,p* 150+100,40));
+        rows.push(new rotStaticB(i*70+55,p* 150+100,40,40));
     
         }
     }
@@ -134,4 +134,5 @@ function makeRows(){
        
         }
     }
+    console.log(rows);
 }
