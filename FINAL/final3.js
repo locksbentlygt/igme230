@@ -16,18 +16,20 @@ var Engine = Matter.Engine,
     let box2;
     let box3;
     let choices = [];
-
+    let angle = 0;
     //let newC;
   
 function setup(){
     
     createCanvas(400,700);
-    
+
+    canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:none";
+    rectMode(CENTER);
     engine = Engine.create();
     world= engine.world;
     strokeWeight(2);
     stroke(51);
-    makeRows();
+   
     ground = Bodies.rectangle(200, 725, 400, 50, { isStatic: true });
     leftS = Bodies.rectangle(-20, 350, 40, 700, { isStatic: true });
     rightS = Bodies.rectangle(420, 350, 40, 700, { isStatic: true });
@@ -39,7 +41,7 @@ function setup(){
     Engine.run(engine);
     //goal();
     World.add(engine.world, [ground,leftS,rightS]);
-   
+    makeRows(); 
     
 }
 
@@ -69,8 +71,14 @@ function mouseClicked(){
 function draw(){
   
     background(255);
-    topS.show();
+
+
     
+   
+   
+
+
+   
     for(let k = 0; k < goals.length; k++){
         goals[k].show();
     }
@@ -80,6 +88,7 @@ function draw(){
     }
     //rect(goalL.position.x,goalL.position.y, 100, 50/2);
     //newC.show();
+
     for(i = 0; i < rows.length; i++){
         rows[i].show();
     }
@@ -89,7 +98,9 @@ function draw(){
             console.log("collision");
         } );
     }
-
+      
+   
+     
     // let r = rows.body.position.x;
     // let tick = 1;
 

@@ -16,13 +16,15 @@ var Engine = Matter.Engine,
     let box2;
     let box3;
     let choices = [];
+    let angle = 0;
+    let bordercol;
 
     //let newC;
   
 function setup(){
     
     createCanvas(400,700);
-    
+    canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:none";
     engine = Engine.create();
     world= engine.world;
     strokeWeight(2);
@@ -49,11 +51,11 @@ function mouseClicked(){
     //  choices =[(new Circ(mouseX,mouseY,15)),(new Boxy(mouseX,mouseY,15,15))];
     let R = random(0,1); 
     // circles.push([R]);
-    if(R > 0.5 ){
+    // if(R > 0.5 ){
     circles.push(new Circ(mouseX,mouseY,15));
-    }else if (R < 0.5){
-    circles.push(new Boxy(mouseX,mouseY,15,15));
-    }
+    // }else if (R < 0.5){
+    // circles.push(new Boxy(mouseX,mouseY,15,15));
+    // }
     console.log(circles.length);
     let gY = random(-1,1);
     let gX = random(-0.5,0.5);
@@ -61,7 +63,7 @@ function mouseClicked(){
     engine.world.gravity.x = gX;
    
     for(let i = 0; i < rows.length; i++){
-     rows[i].colour();
+     bordercol = rows[i].colour();
     }
 }
 
@@ -70,6 +72,7 @@ function draw(){
   
     background(255);
     topS.show();
+    
     
     for(let k = 0; k < goals.length; k++){
         goals[k].show();

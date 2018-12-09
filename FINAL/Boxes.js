@@ -61,18 +61,33 @@ function rotStaticB(x, y, w, h, col){
 
     this.show = function(){
         var pos = this.body.position;
-        for(let t = 0; t < 20; t++){
-        var angle = t;
-        }
+        
+        var angle = this.body.angle;
+        
         noStroke();
         push();
         translate(pos.x,pos.y);
-        rotate(angle);
+        rotate(95);
         rectMode(CENTER);
         rect(0,0, w, h);
-        pop()
+        pop();
+        this.rotateB = function() {
+         push();
+       
+        
+         pop();
+        }
+        // translate(this.width/2, this.height/2);
+        // rotate(PI / 3.0);
     }
     
+    // this.rotateB = function() {
+        // push();
+
+        
+        //pop();
+    //}
+
     //var py = 300 + 100 * Math.sin(engine.timing.timestamp * 0.002);
     //Matter.Body.setVelocity(this.body,10);
     Matter.Body.setAngularVelocity(this.body, 1);

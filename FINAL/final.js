@@ -19,7 +19,7 @@ var Engine = Matter.Engine,
 function setup(){
     
     createCanvas(400,700);
-    
+    canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:none";
     engine = Engine.create();
     world= engine.world;
     strokeWeight(2);
@@ -47,7 +47,7 @@ function mouseClicked(){
 
 function draw(){
   
-    background(51);
+    background(200);
     checkCol();
     for(let k = 0; k < goals.length; k++){
         goals[k].show();
