@@ -2,8 +2,12 @@
     display:flex;
     justify-content: center;
 }
-
+/* this is not my code it was gotten from this link https://codepen.io/nohoid/pen/kIfto   */
+/*|
+  |
+  v*/
 .wrapper { 
+    
     height: 100%;
     width: 100%;
     left:0;
@@ -39,3 +43,179 @@
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
   }
+
+/*^
+  |
+  |*/
+
+  /* this is not my code it was gotten from this link https://codepen.io/nohoid/pen/kIfto   */
+#CP a{
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+}  
+
+#CP{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    width:200px;
+    height:100px;
+    border-radius: 20px;
+    grid-area: "game1";
+    margin: 10px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;  
+     grid-template-columns: 1fr 420px 1fr;
+     padding-top: 110px;
+}
+
+#games{
+    flex-direction: column;
+    grid-column-start: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#game2{
+    display:flex;
+    justify-content:center;
+    background-color: black;
+    width:200px;
+    height:100px;
+    border-radius: 20px;
+    grid-area: "game1";
+    margin: 10px;
+    align-items: center;
+}
+
+#game2 a{
+    color:white;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#game3{
+    display:flex;
+    justify-content:center;
+    background-color: black;
+    width:200px;
+    height:100px;
+    border-radius: 20px;
+    grid-area: "game1";
+    margin: 10px;
+    align-items: center;
+}
+
+
+#game3 a{
+    color:white;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+#game1{
+    display:flex;
+    justify-content:center;
+    background-color: black;
+    width:200px;
+    height:100px;
+    border-radius: 20px;
+    grid-area: "game1";
+    margin: 10px;
+    align-items: center;
+}
+
+
+#game1 a{
+    color:white;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+#myGrid{
+    
+  
+}
+
+#me{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    margin-right: 20px; 
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    margin-left: 20px; 
+}
+
+#Grow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; 
+}
+
+#evr{
+   position: absolute;
+   left: 25%;
+   top:25%;
+    
+}
+
+#about{
+    background-color: black;
+    width:200px;
+    height:50px;
+
+}
+
+#about a{
+    color:white;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 10px;
+    margin: 0;
+}
+
+#aboutParagraph{
+    font-family: 'Fira Sans Condensed', sans-serif;
+   padding:50px;
+}
+/* 
+evralign{} */
